@@ -1,0 +1,16 @@
+1.
+< ./testfiles/infile_hello.txt grep Hello | wc -l > ./testfiles/outfile.txt
+./pipex ./testfiles/infile_hello.txt "grep Hello" "wc -l" ./testfiles/ft_outfile.txt
+
+2.
+< ./testfiles/infile_numbers.txt grep 5 | wc -l > ./testfiles/outfile.txt
+./pipex ./testfiles/infile_numbers.txt "grep 5" "wc -l" ./testfiles/ft_outfile.txt
+
+3.
+< ./testfiles/infile_hello.txt cat | wc -l > ./testfiles/outfile.txt
+./pipex ./testfiles/infile_hello.txt "cat" "wc -l" ./testfiles/ft_outfile.txt
+
+4.
+< ./testfiles/infile_numbers.txt sort -n | head -n 3 > ./testfiles/outfile.txt
+./pipex ./testfiles/infile_numbers.txt "sort -n" "head -n 3" ./testfiles/ft_outfile.txt
+
