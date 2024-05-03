@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   px_utils.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crsharrier <crsharrier@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 21:47:21 by crsharrier        #+#    #+#             */
-/*   Updated: 2024/04/23 22:28:09 by crsharrier       ###   ########.fr       */
+/*   Updated: 2024/05/01 18:13:00 by crsharrier       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void    error(char *msg)
 }
 
 /*
-A wrapper around execve. Take `environ` as a variable and determine 
-whether the program name found at arg[0] can be found on PATH. Call
+A wrapper around execve. Take environ` as a variable and determine 
+whether the program name found at argv[0] can be found on PATH. Call
 execve if found.
 */
 int ft_exec(char **args, char **env)

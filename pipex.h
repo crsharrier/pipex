@@ -6,7 +6,7 @@
 /*   By: crsharrier <crsharrier@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 21:20:24 by crsharrier        #+#    #+#             */
-/*   Updated: 2024/04/24 09:12:06 by crsharrier       ###   ########.fr       */
+/*   Updated: 2024/05/02 21:22:30 by crsharrier       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,9 @@ typedef struct s_PipexFD
     int fd_infile;
     int fd_outfile;
     int fd[2];
-}               t_PipexFD;
+}               t_pipex;
 
 int     ft_exec(char **args, char **env);
 void    error(char *msg);
-
-
 
 #endif
