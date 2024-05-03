@@ -1,7 +1,7 @@
 NAME:= pipex
 CC:= cc
 CFLAGS:= -Wall -Wextra -Werror
-INCLUDES_DIR:= ./
+INCLUDES_DIR:= ./includes
 SRC_DIR:= ./
 LIBFT:= libft.a
 

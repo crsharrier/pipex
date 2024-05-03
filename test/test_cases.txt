@@ -19,6 +19,6 @@
 ./pipex ./testfiles/infile_numbers.txt "sort -n" "head -n 3" "wc -l" ./testfiles/ft_outfile.txt
 
 6
-< ./testfiles/infile_numbers.txt sort -n | head -n 3 > ./testfiles/outfile.txt
-./pipex ./testfiles/infile_numbers.txt "sort -n" "head -n 3" ./testfiles/ft_outfile.txt
+< ./testfiles/infile_greetings.txt grep 4 | cut -c -10 | wc > ./testfiles/outfile.txt
+./pipex ./testfiles/infile_numbers.txt "grep 4" "cut -c -10" "wc" ./testfiles/ft_outfile.txt
 
